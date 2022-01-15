@@ -361,6 +361,51 @@ footer p{
         
 }
 /* tablet responsive */
-@media (min-width:689px) and (max-width:992px){
-    
+@media screen and (min-width: 656px) and (max-width: 870px){
+    .desktop_navbar{
+        display:none;
+    }
+    header{
+        position: relative;
+    }
+    .mb_navbar{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #top_banner .container{
+        flex-flow: column;
+
+    }
+    .texts_content{
+        order:2;
+        padding-right:0;
+        padding-top:30px;
+        text-align:center;
+    }
+    .texts_content h1{
+        font-size:2em;
+    }
+    .texts_content p{
+        padding: 0 15%;
+    }
+    .image_content{
+        order:1;
+    }
+    #brand_logos .logos{
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+    }
+    .product_grids{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+    }
+     #promo_camera .container{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:20px;
+    }
+    .p_name{
+        font-size:2.5em;
+        margin-top:20px;
+    }
 }
